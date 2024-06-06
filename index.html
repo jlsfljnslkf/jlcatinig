@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DEVOUR</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="dark-mode">
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">
+            <img src="img/logo.png" width="50" height="50" alt="Logo"> 言う
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="#about">About Me</a></li>
+                <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
+                <li class="nav-item"><a class="nav-link" href="#interest">Interest</a></li>
+                <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+            </ul>
+            <img src="img/lightmode.jpg" class="theme-icon" onclick="toggleMode()">
+            
+        </div>
+    </nav>
+
+    <!-- Video Background Section -->
+   
+    <section id="video-background">
+        <video autoplay muted loop id="video-bg">
+            <source src="mp4/valorant_clove_darkmode.mp4" type="video/mp4">
+            <source src="mp4/Valorant Agents Iso Jett Phoenix_Lightmode.mp4" type="video/mp4">
+        </video>
+    </section>
+
+    <!-- Home Section -->
+    <section id="home" class="container text-left">
+        <div class="section-container">
+            <div class="text-container">
+                <h1>PARANOIA</h1>
+            <div class="description-box">
+                <p id="home-text">Welcome to my website, feel free to browse in my domain. Just scroll down if you to know more about me this is also to showcase my activties and projects that have i have created. Be the judge of my creation. Thank you! </p>
+            </div>
+            </div> 
+            <div class="image-container">
+                <img src="img/profile.jpg" id="home-image" class="profile-img" alt="Profile Image">
+            </div>
+        </div>
+    </section>
+
+   <!-- About Me Section -->
+<section id="about" class="container">
+    <div class="section-container">
+        <div class="image-container">
+            <!-- Carousel -->
+            <div id="aboutCarousel" class="carousel slide about-carousel" data-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="img/aboutme1.jpg" class="about-image img-fluid" alt="About Me Image 1">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/aboutme2.jpg" class="about-image img-fluid" alt="About Me Image 2">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/aboutme4.jpg" class="about-image img-fluid" alt="About Me Image 3">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/aboutme (3).jpg" class="about-image img-fluid" alt="About Me Image 4">
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#aboutCarousel" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#aboutCarousel" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </div>
+        <div class="text-container left-align">
+            <h2>ABOUT ME</h2>
+            <div class="card about-me-card">
+                <p id="about-text">My name is Jonie Lee Catindig</p>
+                <p id="about-text">I am 21 years old</p>
+                <p>I'm a Second Year student in Technological University of the Philippines (TUPC)</p>
+                <p>Taking Bachelor of Technical Vocational Teacher Education Major in Computer Programming(BTVTED-CP-2A)</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</section>
+
+
+
+<!-- Education Section -->
+<section id="education" class="container">
+    <div class="section-container">
+        <div class="text-container">
+            <!-- Your education text -->
+            <h2>EDUCATION</h2>
+            <div class="description-box">
+                <div class="bulleted-list-container">
+                    <ul class="bulleted-list">
+                        <li>Castillejos Elementary School(Grade 1-6(Top10))</li>
+                        <li>Castillejos National High School(Grade7-8)With Honors</li>
+                        <li>Gen. Tomas Mascardo National High School(Grade9-10)</li>
+                        <li>Gen. Juan Castaneda Senior High School(Grade11-12)</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="image-container">
+            <!-- Circular Collage -->
+            <div class="circle-collage">
+                <img src="img/edu.jpg" class="education-image img-fluid" alt="Education Image 1">
+                <img src="img/edu1.jpg" class="education-image img-fluid" alt="Education Image 2">
+                <img src="img/edu7.jpg" class="education-image img-fluid" alt="Education Image 3">
+                <img src="img/edu3.jpg" class="education-image img-fluid" alt="Education Image 4">
+                <img src="img/edu4.jpg" class="education-image img-fluid" alt="Education Image 5">
+                <img src="img/edu5.jpg" class="education-image img-fluid" alt="Education Image 6">
+            </div>
+        </div>
+    </div>
+</section>
+
+<style>
+    .collage {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+    .collage img {
+        width: calc(33.333% - 10px);
+        margin-bottom: 10px;
+    }
+</style>
+
+<!-- Interest Section -->
+<section id="interest" class="container text-center">
+    <h2>INTEREST</h2>
+    <div class="row">
+        <!-- Sports Carousel -->
+        <div class="col-md-4">
+            <div class="card">
+                <div id="sportsCarousel" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="img/sports.jpg" class="d-block w-100" alt="Sports 1">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="img/sports1.jpg" class="d-block w-100" alt="Sports 2">
+                        </div>
+                     
+                    </div>
+                    <a class="carousel-control-prev" href="#sportsCarousel" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#sportsCarousel" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+                <div class="card-body">
+                    <div class="description-box">
+                        <p id="interest-sports-text" class="card-text">Sports</p>
+                        <p id="interest-sports-text" class="card-text">I'm athletic, but not gifted. I work my ways to make myself improve in sports</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Travel Carousel -->
+        <div class="col-md-4">
+            <div class="card">
+                <div id="travelCarousel" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="img/travel (1).jpg" class="d-block w-100" alt="Travel 1">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="img/travel (2).jpg" class="d-block w-100" alt="Travel 2">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="img/travel (3).jpg" class="d-block w-100" alt="Travel 3">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="img/travel (4).jpg" class="d-block w-100" alt="Travel 4">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="img/travel (5).jpg" class="d-block w-100" alt="Travel 5">
+                        </div>
+                       
+                    </div>
+                    <a class="carousel-control-prev" href="#travelCarousel" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#travelCarousel" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+                <div class="card-body">
+                    <div class="description-box">
+                        <p id="interest-travel-text" class="card-text">Travel</p>
+                        <p id="interest-sports-text" class="card-text">Looking at the window while listening to music while watching the places passing by in long trip is something that I'm never gonna get tiresd of</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Gaming Carousel -->
+        <div class="col-md-4">
+            <div class="card">
+                <div id="gamingCarousel" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="img/game (1).jpg" class="d-block w-100" alt="Gaming 1">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="img/game (3).jpg" class="d-block w-100" alt="Gaming 2">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="img/game (4).jpg" class="d-block w-100" alt="Gaming 3">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="img/game (5).jpg" class="d-block w-100" alt="Gaming 4">
+                        </div>
+                     
+                    </div>
+                    <a class="carousel-control-prev" href="#gamingCarousel" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#gamingCarousel" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+                <div class="card-body">
+                    <div class="description-box">
+                        <p id="interest-gaming-text" class="card-text">Gaming</p>
+                        <p id="interest-sports-text" class="card-text">Playing friends while playing is your comfort is fun not unless you're keep losing</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- Projects Section -->
+<section id="projects" class="container text-center">
+    <h2>Projects</h2>
+    <div class="row">
+        <div class="col-md-3 project-item">
+            <img src="img/art (1).png" class="img-fluid project-image" alt="Project 1">
+            <div class="description-box">
+                <p id="project1-description">ART(Activity)</p>
+            </div>
+        </div>
+        <div class="col-md-3 project-item">
+            <img src="img/art (2).png" class="img-fluid project-image" alt="Project 2">
+            <div class="description-box">
+                <p id="project2-description">ART(Activity)</p>
+            </div>
+        </div>
+        <div class="col-md-3 project-item">
+            <img src="img/art (3).png" class="img-fluid project-image" alt="Project 3">
+            <div class="description-box">
+                <p id="project3-description">ART(Activity)</p>
+            </div>
+        </div>
+        
+        <div class="col-md-3 project-item">
+            <img src="com(4).png" class="img-fluid project-image" alt="Project 4">
+            <div class="description-box">
+                <p id="project4-description">Canva Design(Commision)</p>
+            </div>
+        </div>
+        <div class="col-md-3 project-item">
+            <img src="img/com.png" class="img-fluid project-image" alt="Project 5">
+            <div class="description-box">
+                <p id="project5-description">Magazine(Commision)</p>
+            </div>
+        </div>
+        <div class="col-md-3 project-item">
+            <img src="img/com1.png" class="img-fluid project-image" alt="Project 6">
+            <div class="description-box">
+                <p id="project6-description">Magazine(Commision)</p>
+            </div>
+        </div>
+        <div class="col-md-3 project-item">
+            <img src="img/com2.png" alt="Project 7">
+            <div class="description-box">
+                <p id="project7-description">Magazine(Commision)</p>
+            </div>
+        </div>
+        <div class="col-md-3 project-item">
+            <img src="img/com3.png" class="img-fluid project-image" alt="Project 8">
+            <div class="description-box">
+                <p id="project8-description">Magazine(Commision)</p>
+            </div>
+        </div>
+        <div class="col-md-3 project-item">
+            <img src="img/comi (1).png" class="img-fluid project-image" alt="Project 9">
+            <div class="description-box">
+                <p id="project9-description">Canva Design</p>
+            </div>
+        </div>
+        <div class="col-md-3 project-item">
+            <img src="img/comi (2).png" class="img-fluid project-image" alt="Project 10">
+            <div class="description-box">
+                <p id="img/comi (2).png">Canva Design(Commision)</p>
+            </div>
+        </div>
+        
+        <div class="col-md-3 project-item">
+            <img src="img/com6.png" class="img-fluid project-image" alt="Project 11">
+            <div class="description-box">
+                <p id="project11-description">Canva Design(Commision)</p>
+            </div>
+        </div>
+        <div class="col-md-3 project-item">
+            <img src="img/comi (3).png" class="img-fluid project-image" alt="Project 12">
+            <div class="description-box">
+                <p id="project12-description">Canva Design(Commision)</p>
+            </div>
+        </div>
+    </div>
+</section>
+        
+   <!-- Contact Section -->
+<!-- Footer Section -->
+<footer class="footer bg-dark text-light py-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <h5>Contact Information</h5>
+                <p>Email: <a href="mailto:cjonielee@mail.com" class="text-light">cjonielee@gmail.com</a></p>
+                <p>Phone: +639764752150</p>
+                <p>Address: <a href="https://www.google.com/maps/place/Heart+Shaped+Artificial+Lake/@41.3036527,-81.9022947,171m/data=!" class="text-light">Find me </a></p>
+            </div>
+            <div class="col-md-4">
+                <h5>Quick Links</h5>
+                <ul class="list-unstyled">
+                    <li><a href="#home" class="text-light">Home</a></li>
+                    <li><a href="#about" class="text-light">About</a></li>
+                    <li><a href="#projects" class="text-light">Projects</a></li>        
+                </ul>
+            </div>
+            <div class="col-md-4">
+                <h5>Connect with Us</h5>
+                <ul class="list-unstyled">
+                    <li><a href="https://www.facebook.com/profile.php?" class="text-light"><i class="fab fa-facebook-f"></i> Facebook</a></li>
+                    <li><a href="https://www.youtube.com/@CongTheVlogger" class="text-light"><i class="fab fa-youtube"></i> YouTube</a></li>
+                    <li><a href="https://www.instagram.com/jonielee_29/?" class="text-light"><i class="fab fa-instagram"></i> Instagram</a></li>
+                    <li><a href="https://moewalls.com/" class="text-light"><i class="fab fa-livewallpaper"></i> LiveWallpaper</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- FontAwesome CDN -->
+<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+    <script>
+        function toggleMode() {
+            const body = document.body;
+            const isDarkMode = body.classList.contains("dark-mode");
+
+            body.classList.toggle("dark-mode");
+            body.classList.toggle("light-mode");
+
+            const video = document.getElementById("video-bg");
+            const videoSource = isDarkMode ? "mp4/Valorant Agents Iso Jett Phoenix_Lightmode.mp4"
+                                            : "mp4/valorant_clove_darkmode.mp4";
+            video.src = videoSource;
+            
+            video.load();
+            video.play();
+
+            console.log("Current mode:", isDarkMode ? "Light" : "Dark");
+            console.log("Updated video source:", videoSource);
+        }         
+        window.onload = function() {
+            var darkImg = new Image();
+            var lightImg = new Image();
+            darkImg.src = "dark-mode-background.jpg";
+            lightImg.src = "light-mode-background.jpg";
+        }
+       
+    document.addEventListener("DOMContentLoaded", function () {
+    
+        const aboutCarousel = document.getElementById("aboutCarousel");
+        const aboutCarouselInstance = new bootstrap.Carousel(aboutCarousel, {
+            interval: 3000, 
+            pause: false 
+        });
+
+        const educationCarousel = document.getElementById("educationCarousel");
+        const educationCarouselInstance = new bootstrap.Carousel(educationCarousel, {
+            interval: 3000, 
+            pause: false
+        });
+    });
+    </script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
+
